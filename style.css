@@ -3,10 +3,26 @@ body {
   color: #fff;
   font-family: "Roboto", sans-serif;
 }
-.nav__list {
+.nav__bar {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 1rem;
+  padding: 0 10px;
   align-items: center;
+}
+.nav__list {
+  width: 100%;
+}
+.nav--item {
+  padding: 0 30px;
+  list-style: none;
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+.nav--item:hover {
+  color: #fff;
+}
+li {
+  list-style: none;
+  text-decoration: none;
 }
