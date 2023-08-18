@@ -1,0 +1,12 @@
+body {
+  background: #202020;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
