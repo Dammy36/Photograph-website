@@ -8,7 +8,7 @@
 body {
   background: var(--brading-color);
   color: var(--primary-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--heading-font-family);
 }
 
 .hero {
@@ -53,17 +53,18 @@ h1 {
 }
 .btn {
   font-family: var(--button-font-family);
-  padding: 12px 5px 12px;
+  padding: 30x 18px;
   border: none;
   border-radius: 50px;
   background-color: var(--primary-color);
   color: var(--brading-color);
-  letter-spacing: 8px;
+  letter-spacing: 5px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   line-height: 24px;
   margin-top: 50px;
+  text-transform: uppercase;
 }
 
 .container-image {
@@ -76,9 +77,14 @@ h1 {
   transition: transform 0.2s;
   cursor: pointer;
 }
+.image-row {
+  margin-top: 70px;
+}
 footer {
   display: flex;
   justify-content: space-between;
+  border: 1px solid #2d2727;
+  background-color: #2d2727;
 }
 
 .footer-icon a,
@@ -99,7 +105,64 @@ footer {
   letter-spacing: 2px;
   font-weight: 100;
 }
+
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section-content {
+  margin: 5px;
+}
+.about-section h1 {
+  font-size: 64px;
+  font-weight: bold;
+  letter-spacing: 10%;
+}
+
+.about-me {
+  color: #f65282;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 10%;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+.about-me-cam {
+  color: #f65282;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-image {
+  border: 1px solid #2d2727;
+  border-radius: 4px;
+  background-color: #2d2727;
+}
+
+.about-content {
+  font-size: 18px;
+  line-height: 30px;
+  padding-right: 10px;
+}
+.about-image-text {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.gallery-image {
+  margin-top: 70px;
+}
 @media (max-width: 900px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
   .hero__content {
     top: 20%;
   }
@@ -111,11 +174,11 @@ footer {
   }
 
   .hero-paragraph {
-    font-size: 8px;
+    font-size: 12px;
   }
   .btn {
-    padding: 10px 5px 5px;
-    border-radius: 30px;
+    padding: 10px 10px;
+    border-radius: 20px;
     letter-spacing: 2px;
     font-size: 10px;
 
@@ -127,7 +190,22 @@ footer {
   }
   .fa-copyright {
     font-size: 5px;
-
     letter-spacing: 1px;
+  }
+  .about-section {
+    padding: 80px 20px;
+  }
+  .about-section-content {
+    text-align: center;
+  }
+  .about-section h1 {
+    font-size: 30px;
+  }
+  .about-section p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-content {
+    font-size: 12px;
   }
 }
