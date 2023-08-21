@@ -80,6 +80,9 @@ h1 {
 .image-row {
   margin-top: 70px;
 }
+.gallery-image-row {
+  margin-top: 100px;
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -155,6 +158,7 @@ footer {
   align-items: center;
   display: flex;
 }
+
 .gallery-image {
   margin-top: 70px;
 }
@@ -207,5 +211,8 @@ footer {
   }
   .about-content {
     font-size: 12px;
+  }
+  .gallery-image-row {
+    margin-top: 50px;
   }
 }
